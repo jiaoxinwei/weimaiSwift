@@ -14,6 +14,7 @@
 		1D4B31CE1EF776CA002BF39F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B31CC1EF776CA002BF39F /* LaunchScreen.storyboard */; };
 		1D4B31D91EF776CA002BF39F /* WeiMaiSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B31D81EF776CA002BF39F /* WeiMaiSwiftTests.swift */; };
 		1D4B31E41EF776CA002BF39F /* WeiMaiSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B31E31EF776CA002BF39F /* WeiMaiSwiftUITests.swift */; };
+		4B878E2D61A22BEA15A33ABB /* Pods_WeiMaiSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939932C8F59C7DA9D747D7C9 /* Pods_WeiMaiSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		1D4B31DF1EF776CA002BF39F /* WeiMaiSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiMaiSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4B31E31EF776CA002BF39F /* WeiMaiSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiMaiSwiftUITests.swift; sourceTree = "<group>"; };
 		1D4B31E51EF776CA002BF39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DBAD068354387DB4CB34D8E /* Pods-WeiMaiSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiMaiSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiMaiSwift/Pods-WeiMaiSwift.release.xcconfig"; sourceTree = "<group>"; };
+		939932C8F59C7DA9D747D7C9 /* Pods_WeiMaiSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiMaiSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9EAABD78395181C8C5CEA9 /* Pods-WeiMaiSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiMaiSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiMaiSwift/Pods-WeiMaiSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B878E2D61A22BEA15A33ABB /* Pods_WeiMaiSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1D4B31D71EF776CA002BF39F /* WeiMaiSwiftTests */,
 				1D4B31E21EF776CA002BF39F /* WeiMaiSwiftUITests */,
 				1D4B31C11EF776CA002BF39F /* Products */,
+				FD32650A3450C41D7028A2EF /* Pods */,
+				5912E6078B83B95CD8B72641 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = WeiMaiSwiftUITests;
 			sourceTree = "<group>";
 		};
+		5912E6078B83B95CD8B72641 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				939932C8F59C7DA9D747D7C9 /* Pods_WeiMaiSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD32650A3450C41D7028A2EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA9EAABD78395181C8C5CEA9 /* Pods-WeiMaiSwift.debug.xcconfig */,
+				7DBAD068354387DB4CB34D8E /* Pods-WeiMaiSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D4B31E81EF776CA002BF39F /* Build configuration list for PBXNativeTarget "WeiMaiSwift" */;
 			buildPhases = (
+				85C8C8C6F2592457CD548D97 /* [CP] Check Pods Manifest.lock */,
 				1D4B31BC1EF776CA002BF39F /* Sources */,
 				1D4B31BD1EF776CA002BF39F /* Frameworks */,
 				1D4B31BE1EF776CA002BF39F /* Resources */,
+				90DEA2BD7F72D3D697CD0CB1 /* [CP] Embed Pods Frameworks */,
+				4F4A79DAB3CF27672AC4B427 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F4A79DAB3CF27672AC4B427 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeiMaiSwift/Pods-WeiMaiSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C8C8C6F2592457CD548D97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90DEA2BD7F72D3D697CD0CB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeiMaiSwift/Pods-WeiMaiSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D4B31BC1EF776CA002BF39F /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		1D4B31E91EF776CA002BF39F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9EAABD78395181C8C5CEA9 /* Pods-WeiMaiSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3YA54AB2B7;
@@ -426,6 +502,7 @@
 		};
 		1D4B31EA1EF776CA002BF39F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBAD068354387DB4CB34D8E /* Pods-WeiMaiSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3YA54AB2B7;

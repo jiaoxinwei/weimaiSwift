@@ -1,0 +1,6 @@
+framework module Pods_WeiMaiSwift {
+  umbrella header "Pods-WeiMaiSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
