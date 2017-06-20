@@ -13,6 +13,12 @@ class WMMicropulseViewController: WMBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        WMNetManager.GET(URLString: "http://api.map.baidu.com/telematics/v3/weather", successHandler: { (result) in
+            
+        }) { (error) in
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
 

@@ -12,8 +12,9 @@ class WMBaseTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+        tabBar.tintColor = UIColor.blue//UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
         // 添加子控制器
+        
         addChildViewControllers()
         // Do any additional setup after loading the view.
     }
@@ -22,36 +23,34 @@ class WMBaseTabBarController: UITabBarController {
         
         let homeVC:WMMicropulseViewController! = WMMicropulseViewController()
         let messageVC:WMSeeDoctorViewController! = WMSeeDoctorViewController()
-        let mineVC:WMFindViewController! = WMFindViewController()
-        let otherVC:WMMeViewController! = WMMeViewController()
+        let mineVC:WMMeViewController! = WMMeViewController()
+        let otherVC:WMFindViewController! = WMFindViewController()
         
         //主页面
         let homeNav:WMBaseNavigationController = WMBaseNavigationController(rootViewController: homeVC)
-        homeVC.navigationItem.title = "主页"
+        homeVC.navigationItem.title = "微脉"
         //构造器的知识点
-        let homeItem = UITabBarItem(title: "主页", image: UIImage(named: "Home"), selectedImage: nil)
+        let homeItem = UITabBarItem(title: "微脉", image: UIImage(named: "ic_weimai_normal"), selectedImage: UIImage(named:"ic_weimai_selected"))
         homeNav.tabBarItem = homeItem
         //消息
-        messageVC.navigationItem.title = "消息"
+        messageVC.navigationItem.title = "寻医"
         let messageNav:WMBaseNavigationController = WMBaseNavigationController(rootViewController: messageVC)
-        let messageItem = UITabBarItem(title: "消息", image: UIImage(named: "BreakNews"), selectedImage: nil)
+        let messageItem = UITabBarItem(title: "寻医", image: UIImage(named: "ic_jiankang_normal"), selectedImage: UIImage(named:"ic_jiankang_selected"))
         messageNav.tabBarItem = messageItem
         
         // 消息
-        otherVC.navigationItem.title = "其他"
+        otherVC.navigationItem.title = "发现"
         
         let otherNav:WMBaseNavigationController = WMBaseNavigationController(rootViewController: otherVC)
-        let otherItem = UITabBarItem(title: "其他", image: UIImage(named: "iMessage"), selectedImage: nil)
+        let otherItem = UITabBarItem(title: "发现", image: UIImage(named: "ic_faxian_normal"), selectedImage: UIImage(named:"ic_faxian_selected"))
         otherNav.tabBarItem = otherItem
         
-        
         //我的
-        mineVC.navigationItem.title = "我的"
+        mineVC.navigationItem.title = "我"
         let mineNav:WMBaseNavigationController = WMBaseNavigationController(rootViewController: mineVC)
-        let mineItem = UITabBarItem(title: "我的", image: UIImage(named: "Mine"), selectedImage: nil)
+        let mineItem = UITabBarItem(title: "我", image: UIImage(named: "ic_wode_normal"), selectedImage: UIImage(named:"ic_wode_selected"))
         mineNav.tabBarItem = mineItem
-        
-        self.tabBar.tintColor = UIColor.red
+        self.tabBar.tintColor = UIColor.green
         self.viewControllers = [homeNav,messageNav,otherNav,mineNav]
         
         

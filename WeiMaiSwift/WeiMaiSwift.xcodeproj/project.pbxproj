@@ -22,6 +22,9 @@
 		1D4B320E1EF77E3D002BF39F /* WMSeeDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B320D1EF77E3D002BF39F /* WMSeeDoctorViewController.swift */; };
 		1D4B32101EF77E57002BF39F /* WMFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B320F1EF77E57002BF39F /* WMFindViewController.swift */; };
 		1D4B32121EF77E70002BF39F /* WMMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B32111EF77E70002BF39F /* WMMeViewController.swift */; };
+		1D4B32151EF7A6B1002BF39F /* WMNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B32141EF7A6B1002BF39F /* WMNetManager.swift */; };
+		1D4B321E1EF8EC87002BF39F /* WMMeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4B321C1EF8EC87002BF39F /* WMMeTableViewCell.swift */; };
+		1D4B321F1EF8EC87002BF39F /* WMMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4B321D1EF8EC87002BF39F /* WMMeTableViewCell.xib */; };
 		4B878E2D61A22BEA15A33ABB /* Pods_WeiMaiSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939932C8F59C7DA9D747D7C9 /* Pods_WeiMaiSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		1D4B320D1EF77E3D002BF39F /* WMSeeDoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WMSeeDoctorViewController.swift; path = ../../Me/ViewController/WMSeeDoctorViewController.swift; sourceTree = "<group>"; };
 		1D4B320F1EF77E57002BF39F /* WMFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMFindViewController.swift; sourceTree = "<group>"; };
 		1D4B32111EF77E70002BF39F /* WMMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMMeViewController.swift; sourceTree = "<group>"; };
+		1D4B32141EF7A6B1002BF39F /* WMNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMNetManager.swift; sourceTree = "<group>"; };
+		1D4B321C1EF8EC87002BF39F /* WMMeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WMMeTableViewCell.swift; path = ../WMMeTableViewCell.swift; sourceTree = "<group>"; };
+		1D4B321D1EF8EC87002BF39F /* WMMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WMMeTableViewCell.xib; path = ../WMMeTableViewCell.xib; sourceTree = "<group>"; };
 		7DBAD068354387DB4CB34D8E /* Pods-WeiMaiSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiMaiSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeiMaiSwift/Pods-WeiMaiSwift.release.xcconfig"; sourceTree = "<group>"; };
 		939932C8F59C7DA9D747D7C9 /* Pods_WeiMaiSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeiMaiSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9EAABD78395181C8C5CEA9 /* Pods-WeiMaiSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeiMaiSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeiMaiSwift/Pods-WeiMaiSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,8 +194,8 @@
 		1D4B31F41EF77B9C002BF39F /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				1D4B32201EF8EE3D002BF39F /* View */,
 				1D4B31FA1EF77C18002BF39F /* Model */,
-				1D4B31FB1EF77C18002BF39F /* View */,
 				1D4B31FC1EF77C18002BF39F /* ViewController */,
 			);
 			path = Me;
@@ -198,6 +204,7 @@
 		1D4B31F51EF77B9C002BF39F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1D4B32131EF79D0D002BF39F /* NetworkTool */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,13 +246,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		1D4B31FB1EF77C18002BF39F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		1D4B31FC1EF77C18002BF39F /* ViewController */ = {
@@ -298,6 +298,23 @@
 				1D4B320F1EF77E57002BF39F /* WMFindViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1D4B32131EF79D0D002BF39F /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				1D4B32141EF7A6B1002BF39F /* WMNetManager.swift */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		1D4B32201EF8EE3D002BF39F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D4B321C1EF8EC87002BF39F /* WMMeTableViewCell.swift */,
+				1D4B321D1EF8EC87002BF39F /* WMMeTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		5912E6078B83B95CD8B72641 /* Frameworks */ = {
@@ -433,6 +450,7 @@
 				1D4B31CE1EF776CA002BF39F /* LaunchScreen.storyboard in Resources */,
 				1D4B31CB1EF776CA002BF39F /* Assets.xcassets in Resources */,
 				1D4B31C91EF776CA002BF39F /* Main.storyboard in Resources */,
+				1D4B321F1EF8EC87002BF39F /* WMMeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,11 +524,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4B320C1EF77E0C002BF39F /* WMMicropulseViewController.swift in Sources */,
+				1D4B32151EF7A6B1002BF39F /* WMNetManager.swift in Sources */,
 				1D4B32061EF77CBF002BF39F /* WMBaseTableViewController.swift in Sources */,
 				1D4B32081EF77CE5002BF39F /* WMBaseTabBarController.swift in Sources */,
 				1D4B320A1EF77D0A002BF39F /* WMBaseNavigationController.swift in Sources */,
 				1D4B31C61EF776CA002BF39F /* ViewController.swift in Sources */,
 				1D4B320E1EF77E3D002BF39F /* WMSeeDoctorViewController.swift in Sources */,
+				1D4B321E1EF8EC87002BF39F /* WMMeTableViewCell.swift in Sources */,
 				1D4B32121EF77E70002BF39F /* WMMeViewController.swift in Sources */,
 				1D4B32101EF77E57002BF39F /* WMFindViewController.swift in Sources */,
 				1D4B32041EF77CA7002BF39F /* WMBaseViewController.swift in Sources */,

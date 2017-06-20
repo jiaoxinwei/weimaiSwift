@@ -15,9 +15,9 @@ class WMBaseNavigationController: UINavigationController {
 
         /// 设置导航栏标题
         let navBar = UINavigationBar.appearance()
-        navBar.barTintColor = UIColor.red
-        navBar.tintColor = UIColor.white
-        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 20)]
+        navBar.barTintColor = UIColor.white
+        navBar.tintColor = UIColor.red
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.black, NSFontAttributeName: UIFont.systemFont(ofSize: 20)]
         // Do any additional setup after loading the view.
     }
 
